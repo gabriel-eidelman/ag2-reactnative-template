@@ -1,4 +1,4 @@
 fastapi
 uvicorn
-autogen
+ag2[openai]
 python-dotenv

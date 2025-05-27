@@ -1,9 +1,15 @@
 import os
-from dotenv import load_dotenv
+from autogen import LLMConfig
 
-load_dotenv()
-
-class Settings:
-    OPENAI_API_KEY: str = os.getenv("AZURE_OAI_API_KEY")
-
-settings = Settings()
+llm_config = LLMConfig(
+    config_list=[
+        {
+            "api_type": "azure",
+            "api_key": os.environ["OPENAI_API_KEY"],
+            "api_version": "version",
+            "base_url": "url",
+            "model": "gpt-4o-mini",  # Must match the model your deployment refers to
+        }
+    ],
+    temperature=0.7
+)

@@ -13,7 +13,7 @@ uvicorn app.main:app --reload
 ```
 
 ## Environment Variables
-Create a `.env` file with:
+Add to bash: 
 ```
 OPENAI_API_KEY=your-api-key-here
 ```
