@@ -1,4 +1,4 @@
-# FastAPI + AG2 Full Stack Template
+# React Native + FastAPI + AG2 Full Stack Template
 
 This is a comprehensive template for getting jumpstarted with an integrated full stack environment, with a React Native frontend and a FastAPI/AG2 backend. It's great for creating projects quickly and testing/iterating.
 
