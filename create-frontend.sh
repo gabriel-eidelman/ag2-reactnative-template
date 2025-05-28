@@ -2,7 +2,7 @@
 
 set -e
 
-PROJECT_NAME="my-app"
+PROJECT_NAME="myapp"
 
 echo "Creating new React Native app with TypeScript..."
 # avoids issues with the latest version of react-native-cli
