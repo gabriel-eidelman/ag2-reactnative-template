@@ -1,8 +1,16 @@
 #!/bin/bash
 
-echo "Creating React Native frontend..."
-npx react-native init frontend --template react-native-template-typescript
-cd frontend
-yarn install
-cd ios && pod install && cd ..
-echo "Frontend ready!"
+set -e
+
+PROJECT_NAME="my-app"
+
+echo "Creating new React Native app with TypeScript..."
+# avoids issues with the latest version of react-native-cli
+npm uninstall -g react-native-cli @react-native-community/cli
+npx @react-native-community/cli@latest init $PROJECT_NAME
+
+cd $PROJECT_NAME
+cd ios
+pod install
+cd ..
+
