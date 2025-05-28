@@ -2,6 +2,9 @@
 
 This is a comprehensive template for getting jumpstarted with an integrated full stack environment, with a React Native frontend and a FastAPI/AG2 backend. It's great for creating projects quickly and testing/iterating.
 
+DEMO:
+
+https://github.com/user-attachments/assets/d1c1f954-4ba8-468a-a4cf-73526b69ba20
 ## Setup
 First clone the template with a clean commit history by click the 'Use This Template' button and name your project. Next run 
 ```
@@ -29,17 +32,19 @@ First change the PROJECT_NAME variable to match the name of your project. Next f
 ```
 ./create-frontend.sh
 ```
-Finally, f
+
 ## Run
+
+Next, to start the project (using metro bundler), run
+```
+npm start
+```
+Finally, to start your uvicorn server, from your root directory simply run
 ```bash
-uvicorn app.main:app --reload
+python -m app.main
 ```
+Then you can build the project in xcode and run it on a simulator!
 
-## Environment Variables
-```
-Make sure that in your ~/.bashrc file you have your llm key. Refer to the ag2 user guide for more information.
+## Working With ag2
 
-```
-
-## AG2 Agent
-Edit `app/agents/agent_manager.py` to define agent behavior! Refer to https://docs.ag2.ai/latest/docs/user-guide/basic-concepts/overview/ for more info. Happy coding!
+For the start template to work, you must go into your config file (app/core/config) and change the parameters according to your system/preffered LLM. Refer to the ag2 user guide: https://docs.ag2.ai/latest/docs/user-guide/basic-concepts/llm-configuration/ for more info. Happy coding!
