@@ -9,9 +9,6 @@ env/
 .venv/
 ENV/
 
-# Jupyter Notebook checkpoints (if ever used)
-.ipynb_checkpoints/
-
 # Logs and local data
 *.log
 *.sqlite3
