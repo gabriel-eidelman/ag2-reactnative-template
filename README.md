@@ -4,7 +4,10 @@ This is a comprehensive template for getting jumpstarted with an integrated full
 
 ## Setup
 First clone the template with a clean commit history by click the 'Use This Template' button and name your project. Next run 
-git clone your-project-directory
+```
+git clone <your-project-directory>
+cd your-project-directory
+```
 to create a local clone.
 
 Next make sure you have the following dependencies installed: 
@@ -13,7 +16,9 @@ Next make sure you have the following dependencies installed:
 brew install node
 brew install watchman
 ```
+
 Next you can create your virtual environment, and install the necessary requirements
+
 ```
 python3 -m venv venv
 source venv/bin/activate
@@ -24,7 +29,7 @@ First change the PROJECT_NAME variable to match the name of your project. Next f
 ```
 ./create-frontend.sh
 ```
-Finally, 
+Finally, f
 ## Run
 ```bash
 uvicorn app.main:app --reload
