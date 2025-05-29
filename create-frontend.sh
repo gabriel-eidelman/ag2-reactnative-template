@@ -19,7 +19,8 @@ cd ..
 
 echo "Creating AgentChat.tsx file..."
 
-cat <<EOF > $PROJECT_NAME/AgentChat.tsx
+touch AgentChat.tsx
+cat <<EOF > AgentChat.tsx
 // AgentChat.tsx
 import React, {useEffect, useState} from 'react';
 import { View, Text, StyleSheet, ScrollView, ActivityIndicator } from 'react-native';
@@ -126,7 +127,7 @@ const styles = StyleSheet.create({
 export default AgentChat;
 EOF
 
-cat <<EOF > $PROJECT_NAME/App.tsx
+cat <<EOF > App.tsx
 import React, { useState } from 'react';
 import {
   SafeAreaView,
