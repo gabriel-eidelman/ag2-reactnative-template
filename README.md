@@ -2,9 +2,6 @@
 
 This is a comprehensive template for getting jumpstarted with an integrated full stack environment, with a React Native frontend and a FastAPI/AG2 backend. It's great for creating projects quickly and testing/iterating.
 
-DEMO:
-
-https://github.com/user-attachments/assets/d1c1f954-4ba8-468a-a4cf-73526b69ba20
 ## Setup
 First clone the template with a clean commit history by click the 'Use This Template' button and name your project. Next run 
 ```
