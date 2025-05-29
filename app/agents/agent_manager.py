@@ -1,6 +1,5 @@
 from autogen import ConversableAgent, LLMConfig
 from app.core.config import llm_config
-from app.core.config import summary_llm_config
 
 # Sequential chat full stack demo
 
